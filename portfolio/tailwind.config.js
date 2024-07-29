@@ -21,6 +21,9 @@ export default {
                 'Nunito' : 'Nunito',
                 'Raleway': 'Raleway',
             },
+            backgroundImage : {
+                'banner': "url('/src/presentation/assets/gradient.svg')"
+            },
             boxShadow : {
               'intense':'0px 5px 10px 0px rgba(0,0,0,0.5)'
             },
@@ -28,9 +31,14 @@ export default {
                 pik : {
                     '50%': {opacity: 0}
                 },
+                spin: {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' }
+                }
             },
             animation: {
               'pikPoint': 'pik .8s step-start infinite',
+              'spin-slow': 'spin 8s linear infinite'
             }
         },
     },

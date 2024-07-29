@@ -1,4 +1,4 @@
-import { LogoIcon } from "../../util/MyIcons";
+import { LogoIcon } from "../../util/MyIcons.jsx";
 
 
 export const Logo = () => {

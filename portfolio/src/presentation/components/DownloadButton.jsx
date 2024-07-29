@@ -1,4 +1,4 @@
-import { DownloadIcon } from "../../util/MyIcons";
+import { DownloadIcon } from "../../util/MyIcons.jsx";
 
 export const DownloadButton = () => (
     <button className='

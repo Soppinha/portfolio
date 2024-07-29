@@ -33,6 +33,6 @@ export const Typewriter = ({text, delay}) => {
 
     return <span>
       {currentText}
-        <span className="animate-pikPoint">|</span>
+        <span className="animate-pikPoint font-Raleway font-extrabold">|</span>
     </span>
 };
