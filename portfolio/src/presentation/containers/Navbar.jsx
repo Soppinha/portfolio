@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Logo } from "../../components/Logo.jsx";
-import { Menu } from "../../components/Menu.jsx";
-import { NavOpitionsMenu, NavOptions } from "../../components/NavOptions.jsx";
-import { useScrollShadow } from "../../hooks/scrollView.js";
+import { Logo } from "../components/Logo.jsx";
+import { Menu } from "../components/Menu.jsx";
+import { NavOpitionsMenu, NavOptions } from "../components/NavOptions.jsx";
+import { useScrollShadow } from "../hooks/scrollView.js";
 
 export const MyNavbarBr = () => {
   const hasShadow = useScrollShadow();
@@ -15,7 +15,7 @@ export const MyNavbarBr = () => {
 
   return (
     <nav
-      className={`flex z-[999] fixed top-0 left-0 right-0 bg-transparent px-8 transition-all duration-300 justify-between content-center ${
+      className={`flex z-[999] fixed top-0 left-0 right-0 px-8 transition-all duration-300 justify-between content-center ${
         hasShadow
           ? "drop-shadow-[0_3px_2px_rgba(0,0,0,0.15)] transition-all duration-800 bg-intense-grey"
           : ""

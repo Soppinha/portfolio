@@ -21,7 +21,7 @@ export const NavOptions = () => {
 export const NavOpitionsMenu = () => {
   return(
     <ul
-      className={`flex flex-col w-full pt-20 gap-2 text-white text-base justify-end`}
+      className={`flex flex-col w-full pt-20 gap-2 text-white text-sm justify-end`}
     >
       <li
         className={`px-9 py-2 hover:bg-neutral-900 duration-100`}

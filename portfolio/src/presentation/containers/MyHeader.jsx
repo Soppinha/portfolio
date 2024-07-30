@@ -1,4 +1,4 @@
-import {MyNavbarBr} from "../navbar/Navbar.jsx";
+import {MyNavbarBr} from "../containers/Navbar.jsx";
 
 export const MyHeader = () => {
     return (

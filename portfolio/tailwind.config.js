@@ -14,6 +14,7 @@ export default {
                 'black': '#0D0D0D',
                 'moss': '#728607',
                 'transparent-purple': '#990DCE7F',
+                'purple-dark': '#4A0D5F'
             },
             fontFamily: {
                 'Open Sans': 'OpenSans',
@@ -23,9 +24,6 @@ export default {
             },
             backgroundImage : {
                 'banner': "url('/src/presentation/assets/gradient.svg')"
-            },
-            boxShadow : {
-              'intense':'0px 5px 10px 0px rgba(0,0,0,0.5)'
             },
             keyframes: {
                 pik : {
