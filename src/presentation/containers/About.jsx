@@ -7,7 +7,7 @@ export const About = () => {
       <Area />
       <div className="flex flex-col w-full gap-[2vw]">
         <div>
-          <span className="text-intense-purple text-[4vw] leading-[4.5vw]">
+          <span className="text-intense-purple text-[3.2vw] leading-[4.5vw]">
             Olá, eu sou a
           </span>
           <div className="flex justify-between">

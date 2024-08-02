@@ -1,6 +1,6 @@
 import {MyNavbar} from "../containers/Navbar.jsx";
 
-export const MyHeader = () => {
+export const Header = () => {
     return (
         <header >
             <MyNavbar />

@@ -1,16 +1,11 @@
 import { LogoIcon } from "../../util/MyIcons.jsx";
+import { useScrollToTop } from "../hooks/Scroll.jsx";
 
 
 export const Logo = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth', // Suave rolagem
-        });
-    };
-
+    const scrollToTop = useScrollToTop()
     return (
-        <a className='flex cursor-pointer z-[99] items-center' onClick={scrollToTop}>
+        <a className='flex cursor-pointer z-[99] items-center w-[16vw]' onClick={scrollToTop}>
            <LogoIcon/>
         </a>
     )
