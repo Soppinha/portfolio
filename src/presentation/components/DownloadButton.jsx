@@ -4,20 +4,21 @@ export const DownloadButton = () => (
     <button className='
     flex
     items-center
+    justify-center
     relative
-    gap-2
-    px-6
-    py-2
+    gap-[.512vw]
+    w-[11.5vw]
+    px-[1vw]
+    py-[.5vw]
     text-intense-grey
-    text-sm
+    text-[1.5vw]
     font-Open Sans
     font-bold
-    rounded-md
+    rounded-[.6vw]
     bg-yellow-lemonade
     isolation-auto
-    z-10
+    z-2
     before:absolute
-    before:w-full
     before:transition-all
     before:duration-700
     before:hover:w-full
@@ -30,7 +31,7 @@ export const DownloadButton = () => (
     before:hover:scale-150
     overflow-hidden
     before:hover:duration-700
-    hover:shadow-intense
+    hover:drop-shadow-[0_3px_2px_rgba(0,0,0,1)]
     hover:translate-y-[-5%] transition-all active:translate-y-[-7%]'>
         <DownloadIcon/>
         Baixar CV

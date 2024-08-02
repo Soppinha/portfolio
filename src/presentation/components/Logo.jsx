@@ -10,7 +10,7 @@ export const Logo = () => {
     };
 
     return (
-        <a className=' flex cursor-pointer z-[99] items-center' onClick={scrollToTop}>
+        <a className='flex cursor-pointer z-[99] items-center' onClick={scrollToTop}>
            <LogoIcon/>
         </a>
     )

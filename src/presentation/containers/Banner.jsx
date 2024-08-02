@@ -1,11 +1,11 @@
 import { Divider, Exclamation, Star } from "../../util/MyIcons.jsx";
 import { TextBanner } from "../components/TextBanner.jsx";
+import { MarqueeList } from "./Marquee.jsx";
 
 export const Banner = () => {
   return (
-    <div className="flex justify-center items-center md:min-h-screen w-screen ">
-      <div className=" backdrop-blur-[308px] pt-[18vw] pb-[12vw] md:py-[6vw] px-12 md:px-24 flex flex-col h-full w-full md:justify-center font-Raleway font-black text-[6vw]">
-
+    <article className="flex flex-col backdrop-blur-[308px] justify-center items-center min-h-[60vw] md:min-h-screen w-screen ">
+      <div className="pt-[8rem] pb-[5vh] md:pt-[8vw] md:pb-[4vw] px-12 md:px-24 flex flex-col justify-center h-full w-full md:justify-center font-Raleway font-black text-[6vw] transition-all duration-300">
         <div className="flex gap-4">
           <span className="text-yellow-lemonade">
             TODOS <span className="text-white">os meus</span>
@@ -28,6 +28,9 @@ export const Banner = () => {
           </span>
         </div>
       </div>
-    </div>
+      <div className="bg-intense-purple py-[1.2vw]">
+        <MarqueeList />
+      </div>
+    </article>
   );
 };

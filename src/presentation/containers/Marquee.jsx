@@ -20,11 +20,11 @@ import "@devnomic/marquee/dist/index.css";
 
 export const MarqueeList = () => {
   return (
-    <div className="w-screen flex flex-col gap-[2vw]">
+    <article className="w-screen flex flex-col gap-[2vw] transition-all duration-300">
       <Marquee
         pauseOnHover={true}
-        className="gap-[2vw] motion-reduce:overflow-auto [--duration:15s]"
-        innerClassName="gap-[2vw] [--gap:2vw] motion-reduce:animate-none motion-reduce:first:hidden"
+        className="gap-[1vw] motion-reduce:overflow-auto [--duration:25s]"
+        innerClassName="gap-[1vw] [--gap:1vw] motion-reduce:animate-none motion-reduce:first:hidden"
       >
         <MarqueeComp>
           <Html />
@@ -54,13 +54,6 @@ export const MarqueeList = () => {
           <Tailwind />
           Tailwind
         </MarqueeComp>
-      </Marquee>
-      <Marquee
-        reverse={true}
-        pauseOnHover={true}
-        className="gap-[2vw] motion-reduce:overflow-auto [--duration:15s]"
-        innerClassName="gap-[2vw] [--gap:2vw] motion-reduce:animate-none motion-reduce:first:hidden"
-      >
         <MarqueeComp>
           <Docker />
           Docker
@@ -90,6 +83,7 @@ export const MarqueeList = () => {
           Git
         </MarqueeComp>
       </Marquee>
-    </div>
+      
+    </article>
   );
 };

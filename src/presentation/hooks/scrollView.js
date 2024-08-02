@@ -5,7 +5,7 @@ export const useScrollShadow = () => {
 
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
-        setHasShadow(currentScrollY > 50);
+        setHasShadow(currentScrollY > 30);
     };
 
     useEffect(() => {

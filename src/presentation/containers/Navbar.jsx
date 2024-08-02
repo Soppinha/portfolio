@@ -1,28 +1,42 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Logo } from "../components/Logo.jsx";
 import { Menu } from "../components/Menu.jsx";
 import { NavOpitionsMenu, NavOptions } from "../components/NavOptions.jsx";
 import { useScrollShadow } from "../hooks/scrollView.js";
 
-export const MyNavbarBr = () => {
+export const MyNavbar = () => {
   const hasShadow = useScrollShadow();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 768);
 
   const handleMenuToggle = (open) => {
     setIsMenuOpen(open);
   };
 
+
+  const atualizarLarguraTela = useCallback(() => {
+    setIsWideScreen(window.innerWidth >= 768);
+  }, []);
+
+  useEffect(() => {
+    atualizarLarguraTela();
+
+    window.addEventListener('resize', atualizarLarguraTela);
+
+    return () => window.removeEventListener('resize', atualizarLarguraTela);
+  }, [atualizarLarguraTela]);
+
   return (
     <nav
-      className={`flex z-[999] fixed top-0 left-0 right-0 px-8 transition-all duration-300 justify-between content-center ${
+      className={`flex items-center z-[999] md:pt-[5vh] md:pb-[4vh] fixed top-0 left-0 right-0 px-[6vw] transition-all duration-200 justify-between content-center ${
         hasShadow
           ? "drop-shadow-[0_3px_2px_rgba(0,0,0,0.15)] transition-all duration-800 bg-intense-grey"
           : ""
-      }`}
+      } ${isWideScreen ? "" : "bg-intense-grey"}`}
     >
       <Logo />
-      <div className="hidden md:flex py-7">
+      <div className="hidden md:flex ">
         <NavOptions />
       </div>
 

@@ -21,7 +21,7 @@ export const Menu = ({ isOpen, handleMenuToggle }) => {
   }, [handleMenuToggle]);
 
   return (
-    <div ref={menuRef} className='z-[99] py-4 md:hidden'>
+    <div ref={menuRef} className='h-[90px] z-[99] py-4 md:hidden'>
       <button
         className="relative group"
         onClick={() => handleMenuToggle(!isOpen)}
