@@ -55,8 +55,23 @@ type FilterButtonProps = {
     onClick?: () => void
 }
 
-export const FilterButton: FC<FilterButtonProps> = ({isActive,text, onClick}) => {
-    return <button onClick={onClick} className={`font-Open Sans text-white font-bold text-[1.3vw] ${isActive ? "bg-intense-purple" : "bg-purple-dark"} px-[1vw] py-[.3vw] rounded-[.4vw]`}>
-        {text}
-    </button>
+export const FilterButton: FC<FilterButtonProps> = ({isActive, text, onClick}) => {
+    return (
+        <button
+            onClick={onClick}
+            className={`
+                   ${isActive ? "bg-intense-purple hover:bg-[#C52CFF]" : "bg-purple-dark hover:bg-[#3E0055]"} 
+                   font-Open Sans font-bold 
+                   text-white text-[2.3vw] md:text-[1.3vw]
+                   px-[1.5vw] py-[.6vw] md:px-[1vw] md:py-[.3vw]
+                   rounded-[.8vw] md:rounded-[.4vw]
+                   isolation-auto
+                   z-2
+                   hover:drop-shadow-[0_3px_2px_rgba(0,0,0,1)] hover:translate-y-[-5%]
+                   transition-all 
+                   active:drop-shadow-[0_0px_0px_rgba(0,0,0,1)] active:translate-y-[3%]`
+            }>
+            {text}
+        </button>
+    )
 }

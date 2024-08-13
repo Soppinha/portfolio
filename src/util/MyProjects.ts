@@ -12,11 +12,11 @@ export const cardDataList: CardData[] = [
     {
         img: "src/ui/assets/portifolio.png",
         alt: "Portifólio",
-        tec: ["React", "TypeScript", "Tailwind", "Swapper", "MagicUI"],
+        tec: ["React", "TypeScript", "Tailwind", "SplideJs", "MagicUI"],
         title: "Meu portifólio - Sofia",
         description: "Bem-vindo ao meu portfólio! Meu nome é Sofia e sou uma desenvolvedora iniciante com experiência em Java, Kotlin e Python. " +
             "Este portfólio exibe meus projetos mais recentes e minhas habilidades com várias linguagens, bibliotecas e frameworks.",
-        area: "Frontend",
+        area: "Front-end",
         link: "https://github.com/Soppinha/portfolio"
     },
 ]

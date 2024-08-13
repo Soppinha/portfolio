@@ -1,3 +1,5 @@
+import {useCallback} from "react";
+
 export const useScrollToTop = () => {
     return () => {
         window.scrollTo({
@@ -7,16 +9,11 @@ export const useScrollToTop = () => {
     };
 };
 
-export const useScrollToSection = (id: string) => {
-    return () => {
-        const element = document.getElementById(id);
+export const useScrollToSection = (sectionId: string) => {
+    return useCallback(() => {
+        const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start', 
-            });
-        }else {
-            console.error(`Elemento com id "${id}" não encontrado.`);
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-    };
+    }, [sectionId]);
 };

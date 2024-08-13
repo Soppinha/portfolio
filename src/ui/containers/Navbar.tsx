@@ -14,7 +14,7 @@ export const MyNavbar = () => {
         >
             <Logo/>
             <div className="flex py-6">
-                <NavOptions idProj="proj" idCert="" idAbout="about"/>
+                <NavOptions idProj="proj" idCert="cert" idAbout="about"/>
             </div>
         </nav>
     );

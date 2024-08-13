@@ -22,11 +22,12 @@ export const LabelOption: FC<LabelOptionsProps> = ({label, className, id}) => {
 };
 
 type TagProps = {
-    text: string
+    text: string,
+    className?: string,
 }
 
-export const Tag: FC<TagProps> = ({text}) => {
-    return <span className="font-Open Sans font-semibold text-yellow-lemonade text-[1.5vw] md:text-[1vw] font-extrabold px-[.5vw] py-[.2vw] rounded-[.2vw] bg-intense-purple">
-        {text}
+export const Tag: FC<TagProps> = ({text, className}) => {
+    return <span className={`flex justify-center px-[.8vw] py-[.2vw] w-full rounded-[.5vw] md:rounded-[.3vw] ${className}`}>
+        <div className="font-Raleway font-bold text-black text-[1.5vw] md:text-[1vw]">{text}</div>
     </span>
 }

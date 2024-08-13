@@ -1,12 +1,13 @@
-
-import { Area, Gh, Linkedin } from "../../util/MyIcons";
-import { DownloadButton } from "../components/Buttons.tsx";
+import {Area, Gh, Linkedin} from "../../util/MyIcons";
+import {DownloadButton} from "../components/Buttons.tsx";
 
 export const About = () => {
     return (
         <article
-            className="flex justify-start items-center font-Raleway font-light px-[6vw] gap-[4vw] w-full h-[60vw] md:h-[40vw] transition-all duration-300 py-[4vw]">
-            <Area />
+            className="flex justify-start items-center font-Raleway font-light px-[6vw] gap-[4vw] w-full h-[60vw] md:h-full transition-all duration-300 md:py-[6vw]">
+            <div className=" h-[47vw] md:h-[33vw]">
+                <Area/>
+            </div>
             <div className="flex flex-col items-start w-full gap-[2vw]">
                 <div className="flex w-full flex-col gap-[1vw] md:gap-[0vw]">
                     <span className="text-intense-purple text-[4vw] md:text-[3.2vw] leading-[4.5vw]">
@@ -17,7 +18,7 @@ export const About = () => {
                             Sofia Bastos
                         </span>
                         <div className="flex items-end gap-[1vw]">
-                            <Linkedin /> <Gh />
+                            <Linkedin/> <Gh/>
                         </div>
                     </div>
                 </div>
@@ -27,7 +28,7 @@ export const About = () => {
                     de Segurança da Informação e, atualmente, estou focada em aprimorar
                     minhas habilidades técnicas, com ênfase no desenvolvimento back-end.
                 </p>
-                <DownloadButton text={"Baixar CV"} />
+                <DownloadButton text={"Baixar CV"}/>
             </div>
         </article>
     );

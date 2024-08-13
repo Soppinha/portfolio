@@ -18,8 +18,11 @@ export function HomePage() {
                 <Section id="about" className="scroll-mt-[65px]">
                     <About/>
                 </Section>
-                <Section id="proj" className=" scroll-mt-[70px]">
+                <Section id="proj" className="flex scroll-mt-[70px]">
                     <Projects/>
+                </Section>
+                <Section id="cert" className=" scroll-mt-[70px] h-[50vw]">
+
                 </Section>
             </main>
             <Footer/>
